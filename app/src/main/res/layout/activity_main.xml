@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/delta"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/delta_sponsorship"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/psngr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="40dp"
+        android:text="@string/passenger"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delta"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/kathleen_huang"
+        android:textColor="@color/name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/psngr"
+        app:layout_constraintTop_toBottomOf="@id/delta" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cnstr"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <ImageView
+            android:id="@+id/bluef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0B63FB" />
+
+        <ImageView
+            android:id="@+id/airplane"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_airplane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/jfk"
+            style="@style/jfk_sea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/jfk"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/sea"
+            style="@style/jfk_sea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/sea"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/new_york"
+            style="@style/new_york_seattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/new_york_city"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/seattle"
+            style="@style/new_york_seattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/seattle"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/depart"
+            style="@style/depart_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/depart"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/arrive"
+            style="@style/depart_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/arrive"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/q8_00"
+            style="@style/time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/am8_00"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+        <TextView
+            android:id="@+id/q11_17"
+            style="@style/time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/am11_17"
+            app:layout_constraintStart_toStartOf="@id/cnstr"
+            app:layout_constraintTop_toTopOf="@id/cnstr" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cnstr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cnstr">
+
+        <TextView
+            android:id="@+id/begins"
+            style="@style/begins_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40sp"
+            android:text="@string/boarding_begins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cnstr2" />
+
+        <TextView
+            android:id="@+id/q7_30"
+            style="@style/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/am7_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/begins" />
+
+        <TextView
+            android:id="@+id/gate"
+            style="@style/begins_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/gate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/q7_30" />
+
+        <TextView
+            android:id="@+id/d4"
+            style="@style/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/d4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gate" />
+
+        <TextView
+            android:id="@+id/seat"
+            style="@style/begins_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/seat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/d4" />
+
+        <TextView
+            android:id="@+id/c3"
+            style="@style/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/c3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seat" />
+
+        <TextView
+            android:id="@+id/flight"
+            style="@style/begins_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/flight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cnstr2" />
+
+        <TextView
+            android:id="@+id/d2218"
+            style="@style/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/d2218"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/flight" />
+
+        <ImageView
+            android:id="@+id/qr_cod"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_qr_cod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

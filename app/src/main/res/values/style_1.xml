@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="new_york_seattle">
+        <item name="android:layout_marginTop">90dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blueN</item>
+
+    </style>
+</resources>
